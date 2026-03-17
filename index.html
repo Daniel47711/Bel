@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parabéns, meu amor ❤️</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    const resposta = prompt("Qual é a melhor pessoa desse mundo? 🥰");
+
+    if (resposta === "Ysabella") {
+      alert("Acertou 🤍 Bem-vinda, meu amor ✨");
+    } else {
+      alert("Resposta incorreta 😜 Dica: é o seu nome 💕");
+      location.reload();
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Parabéns, meu amor! 🎉</h1>
+    <div class="heart">🤍</div>
+
+    <p>
+      Hoje é um dia muito especial, porque é o dia da pessoa mais incrível do mundo 💖
+      <br /><br />
+      Que sua vida seja cheia de felicidade, sonhos realizados e muitos momentos lindos.
+      Obrigado(a) por existir e por fazer meus dias melhores ✨
+    </p>
+
+    <button class="btn" onclick="tocarMusica()">Tocar nossa música ▶️</button>
+
+    <footer>
+      Com todo o meu carinho 💘
+    </footer>
+  </div>
+
+  <audio id="musica">
+    <source src="ms.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function tocarMusica() {
+      const musica = document.getElementById("musica");
+      musica.play();
+    }
+  </script>
+
+</body>
+</html>
